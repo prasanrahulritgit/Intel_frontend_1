@@ -146,7 +146,7 @@ const Landingpage = ({ setIsAuthenticated }) => {
 
   const handleLaunchDashboard = () => {
     // Redirect to external login URL
-    window.location.href = "http://127.0.0.1:5000/login";
+    window.location.href = "http://100.64.113.21:5000/login";
   };
 
   useEffect(() => {
@@ -771,11 +771,14 @@ const Landingpage = ({ setIsAuthenticated }) => {
               requirements.
             </p>
             <button
-              className="contact-btn"
-              onClick={() => scrollToSection("hero")}
-            >
-              Contact us <ArrowRight color="#ffffff" />
-            </button>
+  className="contact-btn"
+  onClick={() =>
+    window.open("https://embedded.tessolve.com/contact-us/", "_blank")
+  }
+>
+  Contact us <ArrowRight color="#ffffff" />
+</button>
+
           </div>
         </div>
       </section>
