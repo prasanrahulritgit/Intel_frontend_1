@@ -16,7 +16,7 @@ import {
   LassoSelect,
   Rotate3d,
 } from "lucide-react";
-import rutomatrix from "../../assets/RUTOMATRIX-bg1.png";
+import rutomatrix from "../../assets/Rutomatrix 2.0_Img.png";
 import sl1 from "../../assets/Sl1.png";
 import sl2 from "../../assets/Sl2.png";
 import sl3 from "../../assets/bg3_.png";
@@ -372,7 +372,7 @@ const Landingpage = ({ setIsAuthenticated }) => {
           {/* 3D Model + Drag Hint */}
           <div className="model-modal-content">
             <ThreeDModel
-              url="/models/RUTOMATRIX_Final.glb"
+              url="/models/RUTOMATRIX_Final1.glb"
               view={view}
               rotate={rotate}
               zoomDirection={zoomDirection}

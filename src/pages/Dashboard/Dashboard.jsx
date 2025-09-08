@@ -2391,7 +2391,7 @@ resetBtn.addEventListener('click', async () => {
          
           remoteDesktopFeed.style.display = 'block';
 
-          try {
+          try {start
             const data = await testConnection('http://${ip_add}:8000/start_stream')
             const data1 = await testConnection1('http://${ip_add}:5000/start_stream')
             if (data.status === 'already running' || data.status === 'started') {
