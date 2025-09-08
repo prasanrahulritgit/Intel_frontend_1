@@ -1993,7 +1993,7 @@ resetBtn.addEventListener('click', async () => {
 </body>
 </html>`;
     } else if (isPC) {
-      const ip_add = "100.109.50.57"
+      const ip_add = "100.74.57.57"
       popupHTML = `<!DOCTYPE html>
   <html>
   <head>
@@ -2612,7 +2612,7 @@ resetBtn.addEventListener('click', async () => {
         
         console.log('Sending shortcut:', action);
         
-        fetch(\`http://100.109.50.57:5000/shortcut/\${action}\`, { 
+        fetch(\`http://100.74.57.57:5000/shortcut/\${action}\`, { 
           method: "POST",
           headers: { "Content-Type": "application/json" }
         })
@@ -2628,7 +2628,7 @@ resetBtn.addEventListener('click', async () => {
 </body>
 </html>`;
     } else if (isStream1 || isStream2) {
-      const ip_add = "100.109.50.57";
+      const ip_add = "100.74.57.57";
       const streamPort = isStream1 ? "9003" : "8888";
       const streamHost = isStream1 ? "9002" : "8080";
 
@@ -3107,7 +3107,7 @@ resetBtn.addEventListener('click', async () => {
 </body>
 </html>`;
     } else if (isOs) {
-      const ip_add = "100.109.50.57";
+      const ip_add = "100.74.57.57";
       popupHTML = `<!DOCTYPE html>
 <html>
 <head>
@@ -4518,7 +4518,7 @@ body {
       postcodeList.innerHTML = '';
       cursor.style.display = 'block';
       
-      fetch('http://100.109.50.57:5010/get_data')
+      fetch('http://100.74.57.57:5010/get_data')
         .then(response => response.json())
         .then(data => {
           statusMessage.textContent = 'Started reading...';
@@ -4537,7 +4537,7 @@ body {
     function pollForUpdates() {
       if (!isPolling) return;
       
-      fetch('http://100.109.50.57:5010/poll_data')
+      fetch('http://100.74.57.57:5010/poll_data')
         .then(response => response.json())
         .then(data => {
           // Clear the list and add all postcodes
@@ -4610,7 +4610,7 @@ body {
       refreshBtn.classList.add('loading');
 
       try {
-        const response = await fetch('http://100.109.50.57:8001/power/reset', {
+        const response = await fetch('http://100.74.57.57:8001/power/reset', {
           method: 'GET',
         });
 

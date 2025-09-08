@@ -2013,7 +2013,7 @@ resetBtn.addEventListener('click', async () => {
 </body>
 </html>`;
     } else if (isPC) {
-      const ip_add = "100.109.50.57";
+      const ip_add = "100.74.57.57";
       popupHTML = `<!DOCTYPE html>
 <html>
 <head>
@@ -2581,7 +2581,7 @@ resetBtn.addEventListener('click', async () => {
 </body>
 </html>`;
     } else if (isStream1 || isStream2) {
-      const ip_add = "100.109.50.57";
+      const ip_add = "100.74.57.57";
       const streamPort = isStream1 ? "9003" : "8888";
       const streamHost = isStream1 ? "9002" : "8080";
 
@@ -3060,7 +3060,7 @@ resetBtn.addEventListener('click', async () => {
 </body>
 </html>`;
     } else if (isOs) {
-      const ip_add = "100.109.50.57";
+      const ip_add = "100.74.57.57";
       popupHTML = `<!DOCTYPE html>
 <html>
 <head>
@@ -4405,7 +4405,7 @@ body {
       postcodeValue.textContent = '---';
 
       try {
-        const response = await fetch('http://100.109.50.57:5010/get_data', {
+        const response = await fetch('http://100.74.57.57:5010/get_data', {
           method: 'GET',
         });
 
@@ -4432,7 +4432,7 @@ body {
       refreshBtn.classList.add('loading');
 
       try {
-        const response = await fetch('http://100.109.50.57:8001/power/reset', {
+        const response = await fetch('http://100.74.57.57:8001/power/reset', {
           method: 'GET',
         });
 
